@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri kegiatan Coding Academy.">
+  <title>Galeri | Coding Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Academy</a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <div class="nav-links"><a href="index.html">Beranda</a><a class="active" href="galeri.html">Galeri</a><a href="pendaftaran.html">Pendaftaran</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner"><div class="container"><span class="eyebrow">CERITA DALAM GAMBAR</span><h1>Galeri Kegiatan</h1><p>Lihat contoh suasana belajar, eksplorasi teknologi, dan proses membuat proyek.</p></div></section>
+    <section class="section container">
+      <div class="gallery-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchGallery" type="search" placeholder="Cari kegiatan, misalnya workshop..." aria-label="Cari galeri"></label>
+        <div class="filter-group" aria-label="Filter kategori">
+          <button class="filter-btn active" type="button" data-filter="semua">Semua</button>
+          <button class="filter-btn" type="button" data-filter="workshop">Workshop</button>
+          <button class="filter-btn" type="button" data-filter="kelas">Kelas</button>
+          <button class="filter-btn" type="button" data-filter="proyek">Proyek</button>
+        </div>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <article class="gallery-card" data-category="workshop" data-keywords="workshop kolaborasi coding teknologi">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Peserta bekerja menggunakan laptop" loading="lazy">
+          <div class="gallery-card-body"><span class="card-tag">Workshop</span><h2>Workshop Teknologi</h2><p>Berbagi ide dan mengeksplorasi solusi digital bersama.</p></div>
+        </article>
+        <article class="gallery-card" data-category="kelas" data-keywords="kelas belajar programming komputer">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Tim berdiskusi di depan komputer" loading="lazy">
+          <div class="gallery-card-body"><span class="card-tag">Kelas</span><h2>Belajar Bersama</h2><p>Membangun pemahaman pemrograman langkah demi langkah.</p></div>
+        </article>
+        <article class="gallery-card" data-category="proyek" data-keywords="proyek web development website coding">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Laptop dengan kode program" loading="lazy">
+          <div class="gallery-card-body"><span class="card-tag">Proyek</span><h2>Web Development</h2><p>Menerapkan HTML, CSS, dan JavaScript dalam proyek website.</p></div>
+        </article>
+        <article class="gallery-card" data-category="kelas" data-keywords="kelas diskusi belajar tim">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80" alt="Anggota tim bekerja bersama" loading="lazy">
+          <div class="gallery-card-body"><span class="card-tag">Kelas</span><h2>Diskusi Tim</h2><p>Melatih komunikasi dan kerja sama saat menyelesaikan masalah.</p></div>
+        </article>
+        <article class="gallery-card" data-category="proyek" data-keywords="proyek coding programming software">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Kode pemrograman di layar" loading="lazy">
+          <div class="gallery-card-body"><span class="card-tag">Proyek</span><h2>Eksplorasi Kode</h2><p>Mengenal struktur kode dan membangun solusi secara bertahap.</p></div>
+        </article>
+        <article class="gallery-card" data-category="workshop" data-keywords="workshop presentasi kolaborasi teknologi">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80" alt="Kelompok berdiskusi dalam kegiatan" loading="lazy">
+          <div class="gallery-card-body"><span class="card-tag">Workshop</span><h2>Kolaborasi Kreatif</h2><p>Mengembangkan gagasan menjadi konsep proyek yang bermanfaat.</p></div>
+        </article>
+      </div>
+      <div id="noGalleryResult" class="empty-state" hidden><h2>Kegiatan tidak ditemukan</h2><p>Coba kata kunci atau kategori lainnya.</p></div>
+      <div class="center-action"><a class="btn btn-primary" href="pendaftaran.html">Ikut Bergabung →</a></div>
+      <p class="note">Catatan: gambar di halaman ini merupakan gambar ilustrasi dari Unsplash, bukan dokumentasi resmi Coding Academy.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Academy</a><p>© <span data-year></span> Coding Academy. Belajar, berkarya, berkembang.</p></div></footer>
+  <script src="common.js"></script>
+  <script src="galeri.js"></script>
+</body>
+</html>

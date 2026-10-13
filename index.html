@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coding Academy - belajar pemrograman dari dasar hingga mahir.">
+  <title>Beranda | Coding Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Academy</a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a class="active" href="index.html">Beranda</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">BELAJAR • BERKARYA • BERKEMBANG</span>
+          <h1>Mulai perjalanan coding kamu <span class="text-gradient">dari sini.</span></h1>
+          <p>Belajar pemrograman secara terarah, bangun proyek nyata, dan kembangkan keterampilan digital untuk masa depan.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="pendaftaran.html">Daftar Sekarang <span aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="galeri.html">Lihat Galeri</a>
+          </div>
+          <div class="hero-points">
+            <span>✓ Materi terstruktur</span>
+            <span>✓ Berorientasi proyek</span>
+            <span>✓ Cocok untuk pemula</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="code-window">
+            <div class="window-top"><span></span><span></span><span></span><small>hello-world.js</small></div>
+            <pre><code><span class="code-purple">const</span> future = {
+  skill: <span class="code-green">"programming"</span>,
+  mindset: <span class="code-green">"keep learning"</span>,
+  goal: <span class="code-green">"build something"</span>
+};
+
+<span class="code-blue">function</span> <span class="code-yellow">startJourney</span>() {
+  <span class="code-purple">return</span> <span class="code-green">"Hello, World!"</span>;
+}
+
+console.log(startJourney());</code></pre>
+            <div class="code-status"><span class="status-dot"></span> Ready to build your future</div>
+          </div>
+          <div class="floating-chip chip-one">HTML &amp; CSS</div>
+          <div class="floating-chip chip-two">JavaScript ✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <span class="eyebrow">APA YANG AKAN KAMU PELAJARI?</span>
+        <h2>Bangun keterampilan digital</h2>
+        <p>Pilih bidang yang ingin kamu eksplorasi dan mulai dari fondasi yang kuat.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon icon-blue">⌘</div><h3>Web Development</h3><p>Pelajari HTML, CSS, dan JavaScript untuk membuat website yang menarik dan interaktif.</p><a href="galeri.html">Lihat kegiatan →</a></article>
+        <article class="feature-card"><div class="feature-icon icon-purple">Py</div><h3>Python Programming</h3><p>Kenali logika pemrograman, pengolahan data, dan pembuatan program dari dasar.</p><a href="galeri.html">Lihat kegiatan →</a></article>
+        <article class="feature-card"><div class="feature-icon icon-green">DB</div><h3>Data &amp; Database</h3><p>Pahami cara mengelola data, merancang database, dan menyusun informasi dengan baik.</p><a href="galeri.html">Lihat kegiatan →</a></article>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-box">
+        <div><span class="eyebrow">LANGKAH PERTAMA DIMULAI HARI INI</span><h2>Siap membuat sesuatu yang keren?</h2><p>Daftarkan dirimu dan pilih bahasa pemrograman yang ingin dipelajari.</p></div>
+        <a class="btn btn-light" href="pendaftaran.html">Mulai Pendaftaran →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Academy</a><p>© <span data-year></span> Coding Academy. Belajar, berkarya, berkembang.</p></div></footer>
+  <script src="common.js"></script>
+</body>
+</html>

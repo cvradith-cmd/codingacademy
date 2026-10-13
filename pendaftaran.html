@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulir pendaftaran peserta Coding Academy.">
+  <title>Pendaftaran | Coding Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Academy</a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <div class="nav-links"><a href="index.html">Beranda</a><a href="galeri.html">Galeri</a><a class="active" href="pendaftaran.html">Pendaftaran</a></div>
+    </nav>
+  </header>
+
+  <main id="pendaftaran">
+    <section class="page-banner"><div class="container"><span class="eyebrow">MULAI PERJALANANMU</span><h1>Pendaftaran Peserta</h1><p>Lengkapi data berikut untuk mendaftarkan diri ke Coding Academy.</p></div></section>
+    <section class="section container registration-layout">
+      <div class="registration-main">
+        <div id="formContainer" class="panel">
+          <div class="panel-heading"><h2>Formulir Pendaftaran</h2><p>Kolom bertanda <span class="required">*</span> wajib diisi.</p></div>
+          <form id="registrationForm">
+            <div class="form-grid">
+              <div class="form-field"><label for="nik">NIK <span class="required">*</span></label><input id="nik" name="nik" type="text" inputmode="numeric" pattern="[0-9]{16}" maxlength="16" minlength="16" placeholder="Masukkan 16 digit NIK" required><small>Masukkan tepat 16 digit angka.</small></div>
+              <div class="form-field"><label for="nama">Nama Lengkap <span class="required">*</span></label><input id="nama" name="nama" type="text" maxlength="100" placeholder="Nama sesuai identitas" required></div>
+              <div class="form-field"><label for="jenisKelamin">Jenis Kelamin <span class="required">*</span></label><select id="jenisKelamin" name="jenisKelamin" required><option value="">Pilih jenis kelamin</option><option value="Laki-laki">Laki-laki</option><option value="Perempuan">Perempuan</option><option value="Memilih tidak menyebutkan">Memilih tidak menyebutkan</option></select></div>
+              <div class="form-field"><label for="telepon">Nomor Telepon <span class="required">*</span></label><input id="telepon" name="telepon" type="tel" maxlength="20" placeholder="Contoh: 081234567890" required></div>
+              <div class="form-field full-width"><label for="alamat">Alamat <span class="required">*</span></label><textarea id="alamat" name="alamat" rows="3" maxlength="300" placeholder="Masukkan alamat lengkap" required></textarea></div>
+              <div class="form-field full-width"><label for="bahasa">Bahasa Pemrograman yang Diminati <span class="required">*</span></label><select id="bahasa" name="bahasa" required><option value="">Pilih bahasa pemrograman</option><option value="HTML & CSS">HTML &amp; CSS</option><option value="JavaScript">JavaScript</option><option value="Python">Python</option><option value="Java">Java</option><option value="PHP">PHP</option><option value="C++">C++</option><option value="Lainnya">Lainnya</option></select></div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" type="submit" id="btnSimpan">Simpan Pendaftaran</button><button class="btn btn-secondary" type="reset">Kosongkan Form</button></div>
+          </form>
+        </div>
+
+        <section id="hasilPendaftaran" class="panel" hidden>
+          <div class="success-heading"><div class="success-icon">✓</div><div><h2>Data Pendaftaran</h2><p>Periksa kembali informasi peserta di bawah ini.</p></div></div>
+          <dl id="detailHasil" class="details-list"></dl>
+          <div class="form-actions"><button id="btnEdit" class="btn btn-secondary" type="button">Edit Data</button><button id="btnPendaftaranBaru" class="btn btn-primary" type="button">Pendaftaran Baru</button></div>
+        </section>
+      </div>
+
+      <aside class="registration-aside">
+        <div class="aside-card"><div class="aside-icon">✦</div><h2>Mulai belajar hal baru</h2><p>Isi data dengan benar agar informasi pendaftaranmu mudah diperiksa.</p><ul><li>Lengkapi seluruh kolom wajib</li><li>Periksa kembali NIK dan nomor telepon</li><li>Pilih bahasa yang ingin dipelajari</li></ul></div>
+        <div class="aside-card aside-note"><h3>Informasi penyimpanan</h3><p>Data contoh ini disimpan di browser perangkatmu menggunakan localStorage. Data tidak dikirim ke server dan tidak otomatis muncul di perangkat lain.</p></div>
+      </aside>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading section-heading-left"><span class="eyebrow">DATA LOKAL</span><h2>Daftar Peserta</h2><p>Data yang tersimpan pada browser ini.</p></div>
+      <div class="table-wrap"><table class="participant-table"><thead><tr><th>No.</th><th>Nama</th><th>Bahasa</th><th>Tanggal Daftar</th><th>Aksi</th></tr></thead><tbody id="participantTable"><tr><td colspan="5" class="empty-table">Belum ada peserta terdaftar.</td></tr></tbody></table></div>
+      <p class="note">Jangan gunakan NIK asli untuk demonstrasi publik. Gunakan data uji saat mengerjakan tugas.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span> Coding Academy</a><p>© <span data-year></span> Coding Academy. Belajar, berkarya, berkembang.</p></div></footer>
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
